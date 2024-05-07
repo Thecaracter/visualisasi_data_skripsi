@@ -1,54 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualisasi Data Sentimen Partai Politik</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* CSS untuk memberikan efek bayangan pada iframe */
-        .iframe-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%;
-            /* Perbandingan aspek 16:9 */
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            /* Efek bayangan */
-            border-radius: 10px;
-            /* Border radius untuk efek kotak */
-        }
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-        .iframe-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-    </style>
+    <title>Analisis Sentimen Partai</title>
 </head>
 
 <body>
-    <div class="container mt-5"> <!-- Bootstrap container untuk menengahkan iframe -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: maroon;">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand text-white mb-2" href="#" style="padding: 10px; text-align: center;">
+                Analisis Sentimen Partai Politik<br>
+                Menggunakan Naive Bayes
+            </a>
+        </div>
+    </nav>
+    <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="iframe-container">
-                    <iframe title="skripsi_fix" width="800" height="486"
-                        src="https://app.powerbi.com/view?r=eyJrIjoiMzFmMDkxMDMtOTliZC00MWFmLTkyMzItZjU5MWY5NWM5MTkwIiwidCI6IjUyNjNjYzgxLTU5MTItNDJjNC1hYmMxLWQwZjFiNjY4YjUzMCIsImMiOjEwfQ%3D%3D"
-                        frameborder="0" allowFullScreen="true"></iframe>
+                <div class="card bg-light rounded">
+                    <div class="card-body">
+                        <div class="iframe-container">
+                            <iframe title="skripsi_fix" width="800" height="486"
+                                src="https://app.powerbi.com/view?r=eyJrIjoiMzFmMDkxMDMtOTliZC00MWFmLTkyMzItZjU5MWY5NWM5MTkwIiwidCI6IjUyNjNjYzgxLTU5MTItNDJjNC1hYmMxLWQwZjFiNjY4YjUzMCIsImMiOjEwfQ%3D%3D"
+                                frameborder="0" allowFullScreen="true"></iframe>
+                        </div>
+                        <br>
+                        <p>
+                            Dalam melakukan analisis sentimen, saya menggunakan 7000 data yang didapat dari scraping
+                            Twitter menggunakan JavaScript. Saya memanfaatkan fitur pencarian di Twitter yang dapat
+                            dimanfaatkan dalam sebuah program Node.js sebagai berikut:
+                        </p>
+                        <img src="code_scraping.png" alt="" style="max-width: 100%;">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap JS dan jQuery (untuk beberapa fitur Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
