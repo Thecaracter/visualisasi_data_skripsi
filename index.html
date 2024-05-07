@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisasi Data Sentimen Partai Politik</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* CSS untuk memberikan efek bayangan pada iframe */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            /* Perbandingan aspek 16:9 */
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            /* Efek bayangan */
+            border-radius: 10px;
+            /* Border radius untuk efek kotak */
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5"> <!-- Bootstrap container untuk menengahkan iframe -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="iframe-container">
+                    <iframe title="skripsi_fix" width="800" height="486"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiMzFmMDkxMDMtOTliZC00MWFmLTkyMzItZjU5MWY5NWM5MTkwIiwidCI6IjUyNjNjYzgxLTU5MTItNDJjNC1hYmMxLWQwZjFiNjY4YjUzMCIsImMiOjEwfQ%3D%3D"
+                        frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS dan jQuery (untuk beberapa fitur Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
