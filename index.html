@@ -27,17 +27,61 @@
                 <div class="card bg-light rounded">
                     <div class="card-body">
                         <div class="iframe-container">
-                            <iframe title="skripsi_fix" width="800" height="486"
-                                src="https://app.powerbi.com/view?r=eyJrIjoiMzFmMDkxMDMtOTliZC00MWFmLTkyMzItZjU5MWY5NWM5MTkwIiwidCI6IjUyNjNjYzgxLTU5MTItNDJjNC1hYmMxLWQwZjFiNjY4YjUzMCIsImMiOjEwfQ%3D%3D"
+                            <iframe title="skripsi_fix" width="600" height="373.5"
+                                src="https://app.powerbi.com/view?r=eyJrIjoiYmYyNjQ4NTctYjM5Ni00MGQ5LTgwNGEtZjIwZDE1YzYwNmUzIiwidCI6IjUyNjNjYzgxLTU5MTItNDJjNC1hYmMxLWQwZjFiNjY4YjUzMCIsImMiOjEwfQ%3D%3D"
                                 frameborder="0" allowFullScreen="true"></iframe>
                         </div>
                         <br>
                         <p>
-                            Dalam melakukan analisis sentimen, saya menggunakan 7000 data yang didapat dari scraping
-                            Twitter menggunakan JavaScript. Saya memanfaatkan fitur pencarian di Twitter yang dapat
-                            dimanfaatkan dalam sebuah program Node.js sebagai berikut:
+                            Dalam menganalisis sentimen, saya menggunakan 7000 data yang saya kumpulkan melalui teknik
+                            web
+                            scraping dari Twitter, dengan menggunakan JavaScript. Saya memanfaatkan fitur pencarian di
+                            Twitter, yang terintegrasi dalam sebuah program Node.js. Data yang saya ambil berkaitan
+                            dengan
+                            kata kunci 'partai', dan saya mengumpulkannya mulai dari tanggal 1 Februari 2024 hingga 14
+                            Februari 2024. Saya merasa periode ini sangat tepat karena bersamaan dengan masa kampanye
+                            politik dan pemilihan umum, sehingga memberikan gambaran yang cukup representatif.
                         </p>
-                        <img src="code_scraping.png" alt="" style="max-width: 100%;">
+                        <!-- <img src="code_scraping.png" alt="" style="max-width: 100%;"> -->
+                        <p>
+                            Berikut ini adalah paragraf yang sudah diperbaiki:
+
+                            "Setelah melakukan proses data scraping, saya melakukan preprocessing data dan cleaning.
+                            Dari data awal yang berjumlah 7000 entri, saya berhasil menfilter menjadi 6507 entri yang
+                            layak untuk diolah lebih lanjut. Data tersebut kemudian diproses menggunakan metode Naive
+                            Bayes serta model dari TextBlob untuk klasifikasi. Hasilnya, model ini berhasil mencapai
+                            tingkat akurasi sebesar 0.7825418779775626."
+                        </p>
+                        <p>
+                            Setelah dilakukan analisis lebih lanjut, ditemukan bahwa data tersebut menunjukkan hasil
+                            sentimen yang dominan terhadap partai politik adalah sentimen positif. Dari data yang
+                            diproses, jumlah sentimen positif mencapai 3204 data, sementara sentimen negatif sebanyak
+                            2625 data, dan sentimen netral sebanyak 678 data. Hal ini juga tergambar dalam diagram
+                            lingkaran (pie chart), yang menunjukkan bahwa persentase sentimen positif mencapai 49,24%,
+                            diikuti oleh sentimen negatif sebesar 40,34%, dan sentimen netral sebesar 10,42%.
+                        </p>
+                        <p>
+                            Setelah melakukan klasifikasi menggunakan metode Naive Bayes, saya menambahkan sebuah
+                            parameter tambahan dalam klasifikasi, yaitu klasifikasi terindikasi buzzer. Di sini, ketika
+                            seorang buzzer melakukan tweet positif atau negatif terhadap partai politik yang telah
+                            diolah dengan menggunakan Naive Bayes lebih dari 4 kali dalam satu hari, maka tweet tersebut
+                            dianggap sebagai terindikasi buzzer. Keputusan ini diambil dengan pertimbangan jumlah data
+                            yang tersedia dan hasil dari proses reprocessing data.
+                        </p>
+                        <p>
+                            Hasil klasifikasi terindikasi buzzer dapat dilihat dalam diagram batang (bar chart). Dari
+                            hasil tersebut, terlihat bahwa jumlah tweet yang terindikasi sebagai buzzer, baik positif
+                            maupun negatif, relatif sedikit dibandingkan dengan jumlah tweet yang bukan dari buzzer.
+                            Dari kesimpulan ini, dapat disimpulkan bahwa data yang terindikasi sebagai buzzer tidak
+                            cukup banyak untuk mengubah sentimen yang sudah ada.
+                        </p>
+                        <p>
+                            dan Untuk visualisasi data terakhir menggunakan line chart, kita dapat memperlihatkan
+                            bagaimana pergerakan sentimen setiap harinya. Ini memungkinkan untuk memantau secara visual
+                            perubahan sentimen dari waktu ke waktu. Dengan menggunakan line chart, kita dapat melihat
+                            tren apakah sentimen terhadap partai politik mengalami peningkatan, penurunan, atau stabil
+                            dari hari ke hari selama periode waktu yang diteliti.
+                        </p>
                     </div>
                 </div>
             </div>
