@@ -1,11 +1,11 @@
 .navbar {
-    background-color: maroon;
+    background-color: #E4C59E;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    height: 100px;
+    height: 100%;
     /* Tinggi navbar */
 }
 
@@ -26,6 +26,7 @@
     align-items: center;
 }
 
+
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -41,10 +42,12 @@
     }
 }
 
+
 .iframe-container {
     position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 40.25%;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
