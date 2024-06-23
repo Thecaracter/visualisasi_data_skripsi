@@ -41,7 +41,7 @@
                     <div class="card-body">
                         <br>
                         <p>
-                            Dalam menganalisis sentimen, saya menggunakan 7000 data yang saya kumpulkan melalui teknik
+                            Dalam menganalisis sentimen, saya menggunakan 1900 data yang saya kumpulkan melalui teknik
                             web
                             scraping dari Twitter, dengan menggunakan JavaScript. Saya memanfaatkan fitur pencarian di
                             Twitter, yang terintegrasi dalam sebuah program Node.js. Data yang saya ambil berkaitan
@@ -52,35 +52,31 @@
                         </p>
                         <!-- <img src="code_scraping.png" alt="" style="max-width: 100%;"> -->
                         <p>
-                            Berikut ini adalah paragraf yang sudah diperbaiki:
-
-                            "Setelah melakukan proses data scraping, saya melakukan preprocessing data dan cleaning.
-                            Dari data awal yang berjumlah 7000 entri, saya berhasil menfilter menjadi 6507 entri yang
-                            layak untuk diolah lebih lanjut. Data tersebut kemudian diproses menggunakan metode Naive
-                            Bayes serta model dari TextBlob untuk klasifikasi. Hasilnya, model ini berhasil mencapai
-                            tingkat akurasi sebesar 0.7817734747195328"
+                            Setelah melakukan proses data scraping, dilakukan preprocessing data dan cleaning.
+                            Dari data awal yang berjumlah 1900 entri, saya berhasil menfilter menjadi 1817 entri yang
+                            layak untuk diolah lebih lanjut. Data tersebut Kemudian di labeling secara manual didampingi
+                            oleh Afiatul Muthmainnah S.pd,Gr yaitu guru bahasa Indonesia dari SMAN 1 Kalisat. dengan
+                            data train sejumlah 1305 dan data test yaitu 514 dengan perbandingan 70:30
                         </p>
                         <p>
-                            Setelah dilakukan analisis lebih lanjut, ditemukan bahwa data tersebut menunjukkan hasil
-                            sentimen yang dominan terhadap partai politik adalah sentimen positif. Dari data yang
-                            diproses, jumlah sentimen positif mencapai 3222 data, sementara sentimen negatif sebanyak
-                            2606 data, dan sentimen netral sebanyak 679 data. Hal ini juga tergambar dalam diagram
-                            lingkaran (pie chart), yang menunjukkan bahwa persentase sentimen positif mencapai 49,52%,
-                            diikuti oleh sentimen netral sebesar 40,05%, dan sentimen netral sebesar 10,43%.
+                            Setelah dilakukan analisis lebih lanjut, ditemukan bahwa data tersebukkan hasil
+                            sentimen yang dominan terhadap partai politik adalah sentimen negatif. jumlah sentimen
+                            negatif mencapai 917 data, sementara sentimen positif sebanyak
+                            383 data, dan sentimen netral sebanyak 517 data. Hal ini juga tergambar dalam diagram
+                            lingkaran (pie chart), yang menunjukkan bahwa persentase sentimen negatif mencapai 50,47%,
+                            diikuti oleh sentimen positif sebesar 21,08%, dan sentimen netral sebesar 28,45%.
                         </p>
                         <p>
                             Setelah melakukan klasifikasi menggunakan metode Naive Bayes, saya menambahkan sebuah
                             parameter tambahan dalam klasifikasi, yaitu klasifikasi terindikasi buzzer. Di sini, ketika
                             seorang buzzer melakukan tweet positif atau negatif terhadap partai politik yang telah
-                            diolah dengan menggunakan Naive Bayes lebih dari 4 kali dalam satu hari, maka tweet tersebut
+                            diolah dengan menggunakan Naive Bayes lebih dari 4 kali , maka tweet tersebut
                             dianggap sebagai terindikasi buzzer. Keputusan ini diambil dengan pertimbangan jumlah data
                             yang tersedia dan hasil dari proses reprocessing data.
                         </p>
                         <p>
-                            Berikut adalah word cloud yang menampilkan kata-kata yang sering muncul dalam data. Di sini,
-                            kata yang paling sering muncul tentu saja adalah "Partai", diikuti oleh kata-kata penghubung
-                            seperti "nya", "sama", "jadi", dan kalimat-kalimat yang berbau politik seperti "dewan",
-                            "wakil", "calon", "legislatif", "kampanye", "demokrasi Indonesia", dan lain-lain.
+                            Berikut adalah word cloud yang menampilkan kata-kata yang sering muncul dalam data.yang
+                            terbagi dalam 3 kategori yaitu positif, negatif, dan netral.
                         </p>
                         <img src="wordcloud_negatif.png" alt="" class="img-fluid">
                         <img src="wordcloud_netral.png" alt="" class="img-fluid">
